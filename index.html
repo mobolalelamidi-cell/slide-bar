@@ -3,43 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Dark Admin Dashboard</title>
 </head>
 <body>
-    <div class="sidebar">
-        <ul class="nav-list">
-            <li>
-                <a href="#">
-                   <span class="material-symbols-outlined">dashboard</span>
-                    <span class="links_name">Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                   <span class="material-symbols-outlined">dashboard</span>
-                    <span class="links_name">Clients</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                   <span class="material-symbols-outlined">dashboard</span>
-                    <span class="links_name">Projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                   <span class="material-symbols-outlined">dashboard</span>
-                    <span class="links_name">Report</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                <span class="material-symbols-outlined">dashboard</span>
-                <span class="links_name">Settings</span>
-                </a>            
-            </li>    
-        </ul>
+    <header class="page-title">
+        <h1>Administrator Dashboard In Darkmode.</h1>
+        <p>The is an Administrator dashboard in darkmode for user that love dark theme.</p>
+    </header>
+
+    <div class="dashboard-shell">
+        <aside class="sidebar">
+            <h2 class="logo">Modu.</h2>
+
+            <ul class="nav-list">
+                <li class="active">
+                    <a href="#">
+                        <span class="material-symbols-outlined">dashboard</span>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-outlined">group</span>
+                        <span class="links_name">Clients</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-outlined">chat</span>
+                        <span class="links_name">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-outlined">calendar_month</span>
+                        <span class="links_name">Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-outlined">summarize</span>
+                        <span class="links_name">Report</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section class="top-stats">
+                <article class="stat-card">
+                    <div>
+                        <small>Total Applicant</small>
+                        <strong>1733</strong>
+                        <small>During 3 months</small>
+                    </div>
+                    <div class="progress-ring" style="--value: 75%;">
+                        <span>75%</span>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div>
+                        <small>Invited Interview</small>
+                        <strong>1203</strong>
+                        <small>During 6 months</small>
+                    </div>
+                    <div class="progress-ring" style="--value: 65%;">
+                        <span>65%</span>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div>
+                        <small>Total Post</small>
+                        <strong>1003</strong>
+                        <small>During 6 months</small>
+                    </div>
+                    <div class="progress-ring" style="--value: 80%;">
+                        <span>80%</span>
+                    </div>
+                </article>
+            </section>
+
+            <section class="candidate-grid">
+                <article class="candidate-card" style="--accent: var(--yellow);">
+                    <div class="avatar-wrap">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Bolu Samuel">
+                    </div>
+                    <span class="rank">1st</span>
+                    <h3 class="candidate-name">Bolu Samuel</h3>
+                    <p class="candidate-email">sammy.bolu@gmail.com</p>
+                    <p class="candidate-score">Total Point: 530</p>
+                    <button class="btn">View Details</button>
+                </article>
+
+                <article class="candidate-card" style="--accent: var(--blue);">
+                    <div class="avatar-wrap">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="Bayo Dapo">
+                    </div>
+                    <span class="rank">2nd</span>
+                    <h3 class="candidate-name">Bayo Dapo</h3>
+                    <p class="candidate-email">anny.dapo@gmail.com</p>
+                    <p class="candidate-score">Total Point: 510</p>
+                    <button class="btn">View Details</button>
+                </article>
+
+                <article class="candidate-card" style="--accent: var(--cyan);">
+                    <div class="avatar-wrap">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Dupe Ojo">
+                    </div>
+                    <span class="rank">3rd</span>
+                    <h3 class="candidate-name">Dupe Ojo</h3>
+                    <p class="candidate-email">ojo.dupe@gmail.com</p>
+                    <p class="candidate-score">Total Point: 510</p>
+                    <button class="btn">View Details</button>
+                </article>
+            </section>
+
+            <section class="schedule-card">
+                <div class="section-head">
+                    <h2>Interview Schedule</h2>
+                    <select class="select" aria-label="Schedule date">
+                        <option>Today</option>
+                        <option>Tomorrow</option>
+                        <option>This week</option>
+                    </select>
+                </div>
+
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Candidate Name</th>
+                            <th>Position</th>
+                            <th>Designation</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Timmy Isaac</td>
+                            <td>Designer</td>
+                            <td>UI/UX</td>
+                            <td>03:30 PM</td>
+                            <td><span class="status upcoming">Upcoming</span></td>
+                        </tr>
+                        <tr>
+                            <td>Oyewole Tope</td>
+                            <td>Writer</td>
+                            <td>Copy writing</td>
+                            <td>11:30 PM</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Bolu Samuel</td>
+                            <td>Developer</td>
+                            <td>Frontend</td>
+                            <td>03:30 AM</td>
+                            <td><span class="status cancelled">Cancelled</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <aside class="right-panel">
+            <div class="panel-icons">
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+
+            <section>
+                <div class="section-head">
+                    <h2>Job Listing</h2>
+                    <a href="#" class="job-subtitle">See all</a>
+                </div>
+
+                <article class="job-card">
+                    <div class="job-row">
+                        <img class="job-thumb" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=120&q=80" alt="UI/UX job">
+                        <div>
+                            <h3 class="job-title">UI/UX Designer</h3>
+                            <p class="job-subtitle">Netflix corporation</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis ms-auto"></i>
+                    </div>
+                    <div class="tags">
+                        <span class="tag remote">Remote</span>
+                        <span class="tag full">Full Time</span>
+                    </div>
+                </article>
+
+                <article class="job-card">
+                    <div class="job-row">
+                        <img class="job-thumb" src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?auto=format&fit=crop&w=120&q=80" alt="UI designer job">
+                        <div>
+                            <h3 class="job-title">UI Designer</h3>
+                            <p class="job-subtitle">Spotify corporation</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis ms-auto"></i>
+                    </div>
+                    <div class="tags">
+                        <span class="tag remote">Remote</span>
+                        <span class="tag full">Full Time</span>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <div class="section-head" style="margin-top: 36px;">
+                    <h2>Board Instructor</h2>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <div class="instructors">
+                    <div class="mini-avatar">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80" alt="Instructor one">
+                    </div>
+                    <div class="mini-avatar">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Instructor two">
+                    </div>
+                    <div class="mini-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Instructor three">
+                    </div>
+                    <div class="mini-avatar">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Instructor four">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-head" style="margin-top: 36px;">
+                    <h2>Presence Report</h2>
+                </div>
+
+                <div class="presence-card">
+                    <div>
+                        <div class="bar" style="--height: 66px;"></div>
+                        <p class="bar-label">Sat</p>
+                    </div>
+                    <div>
+                        <div class="bar" style="--height: 92px;"></div>
+                        <p class="bar-label">Sun</p>
+                    </div>
+                    <div>
+                        <div class="bar" style="--height: 124px;"></div>
+                        <p class="bar-label">Mon</p>
+                    </div>
+                    <div>
+                        <div class="bar" style="--height: 90px;"></div>
+                        <p class="bar-label">Tue</p>
+                    </div>
+                    <div>
+                        <div class="bar" style="--height: 66px;"></div>
+                        <p class="bar-label">Wed</p>
+                    </div>
+                </div>
+            </section>
+        </aside>
     </div>
 </body>
 </html>
